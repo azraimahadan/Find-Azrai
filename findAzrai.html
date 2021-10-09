@@ -1,0 +1,545 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <title>findazrai.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: -5px 0;
+        }
+        #container{
+            margin-top: 90px;
+        }
+        .inner_container {
+            margin: 0 auto;
+            padding: 0 40px;
+            max-width: 1280px;
+        }
+        section{
+            padding-bottom: 100px;
+            padding-top: 100px;
+            display: block;
+        }
+        div{
+            display: block;
+        }
+        .Home{
+            background-image: url(bg.jpg);
+            background-attachment:scroll;
+            background-position: center;
+            margin-top: 0px;
+            padding-top: 290px;
+            padding-bottom: 295px;
+            background-size: 1283px 722px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .home_text{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        p{
+            color: whitesmoke;
+            font-family: "Merriweather", Georgia, sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.8;
+            margin: -3px;
+        }
+        ul{
+            display: block;
+            list-style-type: none;
+        }
+        header{
+	       position: relative;
+	       width: 100%;
+	       height: 60px;
+	       background-color: rebeccapurple;
+        }
+
+        #header-container{
+	        width: 1200px;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:;
+            position: relative;
+            float: none;
+        }
+
+        .title{
+            position: relative;
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: 2px;
+            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 20px;
+            top: 16px;
+            float: left;
+        }
+        #icons-container-right {
+            position: relative;
+            top: 8px;
+            float: right;
+        }
+        .icon1 {
+            background-image: url(home%20icon.png);
+            background-size: 47px;
+            width: 44px;
+            height: 44px;
+            position: relative;
+            margin-right: 15px;
+            display: inline-block;
+            clear: both;
+        }
+        .icon2 {
+            background-image: url(about_icon.png);
+            background-size: 45px;
+            color: transparent;
+            position: relative;
+            width: 44px;
+            height: 44px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+        .icon3 {
+            background-image: url(my%20work_icon.png);
+            background-size: 49px;
+            position: relative;
+            width: 50px;
+            height: 43px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+        .icon4 {
+            background-image: url(contactsicon.png);
+            background-size: 52px;
+            position: relative;
+            width: 44px;
+            height: 44px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+        .hello{
+            line-height: 1em !important;
+            font-family: 'IBM Plex Mono', monospace;
+            color: aliceblue;
+            font-size: 4em;
+            margin: 20px 0;
+            font-weight: normal;
+        }
+        .hello1{
+            line-height: 1em;
+            font-family: 'Roboto', sans-serif;
+            color: aquamarine;
+            font-size: 2em;
+            font-style: italic;
+        }
+        #about{
+            background-image: url(bg2.jpg);
+            background-size: 1283px 722px;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            position: relative;
+        }
+        #portfolio{
+            background-image: url(bg3.jpg);
+            background-size: 1283px 1122px;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            padding-bottom: 750px;
+            position: relative;
+            text-align: center
+        }
+        .sub_title{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4em;
+            font-weight: 200;
+            color: aliceblue;
+        }
+        .myphoto{
+            float:left;
+            width:40%;
+            margin-top:90px;
+            text-align: center;
+        }
+        .profile_info{
+            position: relative;
+            margin: 20px;
+            width: 50%;
+            height: 50%;
+        }
+        .skill_info{
+            float: right;
+            width: 50%;
+            margin-top: 50px;
+        }
+        .ability-title{
+            list-style-type:  none;
+            float: left;
+
+        }
+        .work_layout{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4em;
+            font-weight: 200;
+            color: aliceblue;
+            
+        }
+        .work_layout_desc{
+            font-weight: 100px;
+            line-height: 1em;
+            font-family: 'Roboto', sans-serif;
+            color: bisque;
+            font-size: 1.5em;
+            margin: 50px 0;
+        }
+        ul.graph{
+            margin-left: 40px;;
+            padding: 0;
+            list-style-type: none;
+            clear: both;
+        }
+	
+        ul.graph li{
+            margin-bottom: .5em;
+            padding: .2em;
+            background: #600;
+            color: #fff;
+            text-align: left;
+        }	
+        ul.graph li.percent1{
+            width: 70%;
+        }
+
+        ul.graph li.percent2{
+            width: 65% ;
+        }
+
+        ul.graph li.percent3{
+            width:  75% ;
+        }
+
+        ul.graph li.percent4{
+            width:  65% ;
+        }
+        ul.graph li.percent5{
+            width:  55% ;
+        }
+        ul.graph li.percent6{
+            width:  65% ;
+        }
+        ul.graph li.percent7{
+            width:  75% ;
+        }
+        ul.graph li.percent8{
+            width:  85% ;
+        }
+        #mywork{
+            background-image: url(bg2.jpg);
+            background-position: center;
+            background-size: 1283px 1122px;
+            width: 100%;
+            height: 100%;
+            padding-top: 1px;
+            padding-bottom: 0px;
+            position: relative;
+        }
+        .column{
+            padding: 30px; 
+            display: inline;
+        }
+        .row{
+            display: inline-block;
+        }
+        .footer {
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            color: white;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            position: fixed;
+            
+        }
+        .button {
+              border-radius: 4px;
+              background-color: darkblue;
+              border: none;
+              color: #FFFFFF;
+              text-align: center;
+              font-size: 15px;
+              padding: 10px;
+              padding-bottom: 30px;
+              height: 20px;
+              width: 150px;
+              transition: all 0.5s;
+              cursor: pointer;
+              margin: 5px;
+            }
+
+        .social {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+              color: aliceblue;
+            }
+
+        .social:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+
+        .button:hover .social {
+              padding-right: 25px;
+        }
+
+        .button:hover .social:after {
+              opacity: 1;
+              right: 0;
+        }
+        #myBtn {
+              display: none; 
+              position: fixed; 
+              bottom: 20px; 
+              right: 30px; 
+              z-index: 99; 
+              border: none; 
+              outline: none; 
+              background-color: blueviolet; 
+              color: white; 
+              cursor: pointer; 
+              padding: 15px; 
+              border-radius: 10px; 
+              font-size: 18px; 
+        }
+
+        #myBtn:hover {
+              background-color: #555; 
+        }
+        .gambar{
+              box-shadow: 10px 10px 10px 10px ;
+        }
+        .cont{
+            text-align: center;
+            padding: 60px;
+            padding-bottom: 100px;
+        }
+        .findme{
+            font-weight: 100px;
+            line-height: 0.6em;
+            font-family: 'Roboto', sans-serif;
+            color: magenta;
+            font-size: 1.0em;
+            margin: 50px 0;
+        }
+        .fa {
+              padding:15px;
+              font-size: 30px;
+              width: 50px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 40%;
+            }
+
+            .fa:hover {
+              opacity: 0.7;
+            }
+
+            .fa-facebook {
+              background: #3B5998;
+              color: white;
+            }
+
+            .fa-twitter {
+              background: #55ACEE;
+              color: white;
+            }
+
+            .fa-google {
+              background: #dd4b39;
+              color: white;
+            }
+            .fa-youtube {
+              background: #bb0000;
+              color: white;
+            }
+
+            .fa-instagram {
+              background: #125688;
+              color: white;
+            }
+    </style>
+</head>
+<body>
+        <header>
+            <div id="header-container">
+                <div id="title-azrai" class="title">MAZ</div>
+                <div id="icons-container-right">
+                    <a href="findAzrai.html">
+                        <div class="icon1"></div> 
+                    </a>
+                    
+                    <a href="#about">
+                        <div class="icon2"></div>
+                    </a>
+
+                    <a href="#mywork">
+                        <div class="icon3"></div>
+                    </a>  
+                    <a href="#contacts">
+                        <div class="icon4"></div>
+                    </a>
+                </div>
+            </div>
+        </header>
+    <div class="Home" id="Home">
+        <div class="home_text">
+            <div id="hello" class="hello"></div>
+            <div class="hello1">-You only live once-</div>
+        </div>
+    </div>
+    <div class="content">
+        <section id="about">
+            <div class="profile_info" style="text-align: center; margin-left: 350px;">
+                <h2 class="sub_title">About</h2>
+                <p class="personal_info">
+                    I'am Azrai Mahadan, Software Engineer in Telekom Malaysia, born in Malaysia
+                    and currently based in Seoul, South Korea
+                </p>
+                <p>
+                I've been designing and coding since 2016 when I was in high school.
+                When the first time I learn the basic Microsoft Words, I am so excited to learn more.
+                </p>
+                <p>
+                At 2017,finally I learn my first programming-language, C++ language. It was so difficult since I 
+                don't have any programming basics but I made it.
+                </p>
+                <p>
+                    Along with the ups and downs, today I have succeeded to achieve my true dream, a software engineer.</p>
+                    <p style="font-weight: 500;">Never give up and always keep your dreams in mind.
+                </p>
+            </div>
+        </section>
+        <div id="portfolio">
+            <div class=myphoto>
+                <img class="gambar" src="IMG_0145.jpg" width= "300px"; height=auto; >
+            </div>
+            <div class="skill_info">
+                <h3 class="sub_title" style="font-size: 3.5em; padding-right: 150px;">Skills</h3>
+                <ul class="graph">
+                    <li class="percent1">HTML5</li>
+                    <li class="percent2">CSS3</li>
+                    <li class="percent3">SQL</li>
+                    <li class="percent4">Java</li>
+                    <li class="percent5">Photoshop</li>
+                    <li class="percent6">C++</li>
+                    <li class="percent7">Microsoft Office</li>
+                    <li class="percent8">Python</li>
+                </ul>
+            </div>
+        </div>
+        <p class="clearfix"></p>
+        <section id="mywork">
+            <h2 class="work_layout" style="text-align: center">My Work</h2>
+            <div class="work_layout_desc" style="text-align: center; margin-bottom: 50px;">Follow me on 
+                <a href="">Instagram</a>
+                to see what I'm currently working on and to get some fresh design tips
+            </div>
+            <div class="row clearfix" style="margin-bottom: 50px;">
+                <div class="column">
+                  <img src="hildesheim-2772941_1920.jpg" alt="Snow" style="max-width:30%;height:260px;">
+                </div>
+                <div class="column">
+                  <img src="kuala-lumpur-1820944_1920.jpg" alt="Forest" style="max-width:30%; height:260px;">
+                </div>
+                <div class="column">
+                  <img src="water-motion-2018063_1920.jpg" alt="Mountains" style="max-width:30%;height:260px;">
+                </div>
+            </div>
+            <div id="contacts">
+                <div class="cont">
+                    <div class="findme" style="margin-bottom: 30px;">You also can find me here</div>
+                    <a href="https://www.facebook.com/mohamadazrai.mahadan" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/azraimahadan/?hl=en" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/azraimahadan" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://mail.google.com/mail/" target="_blank" class="fa fa-google"></a>
+                    <a href="https://www.youtube.com/channel/UCqZbSmjnazaD-WlrBvfMNNA?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+                </div>
+            <div class="footer">
+                <button class="button"><a href="https://www.facebook.com/mohamadazrai.mahadan" target="_blank">
+                    <div class="social">Facebook</div>
+                    </a>
+                </button>
+                    
+                <button class="button"><a href="https://www.instagram.com/azraimahadan/?hl=en" target="_blank">
+                    <div class="social">Instagram</div>
+                    </a>
+                </button>
+                    
+                <button class="button"><a href="https://twitter.com/azraimahadan" target="_blank">
+                    <div class="social">Twitter</div>
+                    </a>
+                </button>
+            
+                <button class="button"><a href="mailto : mohdazraimahadan@gmail.com">
+                    <div class="social">Email</div>
+                    </a>
+                </button>
+            </div>
+            </div>
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+                }
+                }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+ 
+        <script type="text/javascript">
+            var app = document.getElementById('hello');
+
+            var typewriter = new Typewriter(hello, {
+                loop: true
+            });
+
+            typewriter.typeString('Hello! I am Azrai')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('Nice to meet you')
+                .pauseFor(2500)
+                .deleteChars(16)
+                .typeString('Let\'s get started!')
+                .pauseFor(2500)
+                .start();
+        </script>
+    </div>
+</body>
